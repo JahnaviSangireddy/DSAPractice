@@ -18,7 +18,7 @@ public class FindGCD {
         }
         return gcd;
     }
-    //initialize gcd as min og n1,n2. loop using initial val as gcd and minimize till 1
+    //initialize gcd as min of n1,n2. loop using initial val as gcd and minimize till 1
 // divide both nums. if there is a number that divides both n1 ,n2 break the loop and return that number
 
     private static int findGCDUsingMinMethod(int n1, int n2) {
