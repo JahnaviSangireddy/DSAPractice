@@ -31,6 +31,7 @@ public class AnagramGrops {
                 map.put(s,list);
             }
         }
+        map.forEach((k,v)-> System.out.println(k+" : "+v));
         for(List<String> l : map.values()){
             reslist.add(l);
         }

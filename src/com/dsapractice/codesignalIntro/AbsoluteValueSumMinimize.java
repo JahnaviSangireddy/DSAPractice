@@ -26,14 +26,11 @@ public class AbsoluteValueSumMinimize {
     }
 
     private static int findLowestValue(int[] arr) {
-        int minsum =0; int val = 0;
+        int minsum =Integer.MAX_VALUE; int val = 0;
         for(int i=0; i<arr.length; i++){
             int sum=0; int x=arr[i];
             for(int j=0;j<arr.length;j++){
                 sum = sum+Math.abs(arr[j] - x);
-                if(i==0){
-                    minsum = sum;
-                }
             }
             if(sum < minsum){
                 minsum = sum;

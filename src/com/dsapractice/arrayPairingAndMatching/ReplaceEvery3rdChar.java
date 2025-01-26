@@ -21,7 +21,7 @@ public class ReplaceEvery3rdChar {
                 System.out.println(s.charAt(i));
                 char c = 0;
                 if(Character.isLowerCase(s.charAt(i))){
-                     c= (char)((s.charAt(i)-'a'+1)%26+'a');
+                    c= (char)((s.charAt(i)-'a'+1)%26+'a');
                 }else if(Character.isUpperCase(s.charAt(i))){
                     c= (char)((s.charAt(i)-'A'+1)%26+'A');
                 }

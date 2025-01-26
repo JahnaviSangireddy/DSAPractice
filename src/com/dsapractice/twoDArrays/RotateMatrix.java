@@ -20,8 +20,8 @@ public class RotateMatrix {
         transposeMatrix(matrix);
         printMatrix(matrix);
         System.out.println("**************");
-       // reverseRows(matrix);
-        reverseColumns(matrix);
+        reverseRows(matrix);
+       // reverseColumns(matrix);
         printMatrix(matrix);
     }
 

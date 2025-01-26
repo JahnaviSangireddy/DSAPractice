@@ -3,10 +3,23 @@ package com.dsapractice.arrays;
 public class ProductOfArrayExceptSelf {
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4};
-        int prodarr[] = findproduct(arr);
+        //int prodarr[] = findproduct(arr);
+        int prodarr[] = findproduct1(arr);
         for(int i : prodarr){
             System.out.print(i+" ");
         }
+    }
+
+    private static int[] findproduct1(int[] arr) {
+        int product [] = new int [arr.length];
+        int p=1; int i=0;
+        for(int j=0; j<arr.length; j++){
+            p = p*arr[j];
+        }
+        for( i=0; i<arr.length; i++){
+            product[i] = p/arr[i];
+        }
+        return product;
     }
 
     private static int[] findproduct(int[] arr) {

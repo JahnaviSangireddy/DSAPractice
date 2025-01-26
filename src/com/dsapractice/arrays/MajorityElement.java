@@ -9,7 +9,7 @@ public class MajorityElement {
         You may assume that the majority element always exists in the array.
         Could you solve the problem in linear time and in O(1) space?
          */
-        int nums[] ={2,2,1,1,1,2,2};
+        int nums[] ={2,2,1,1,1,2,2,1,1};
         int majelm = findMajorityElement(nums);
         System.out.println(majelm);
     }
@@ -25,6 +25,7 @@ public class MajorityElement {
             }else{
                 count--;
             }
+            System.out.println(count);
         }
         return majelm;
     }

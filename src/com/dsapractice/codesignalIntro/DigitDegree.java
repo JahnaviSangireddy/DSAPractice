@@ -24,18 +24,19 @@ public class DigitDegree {
     solution(n) = 2.
     9 + 1 = 10 -> 1 + 0 = 1.
          */
-        int n=555;
+        int n=91;
         int singledig= finddigit(n);
         System.out.println(singledig);
     }
 
     private static int finddigit(int n) {
-        int s=0;
+        int s=0; int count=0;
         while(n>9){
           s =  findDigitSum(n);
           n = s;
+          count++;
         }
-        return n;
+        return count;
     }
 
     private static int findDigitSum(int n) {

@@ -30,6 +30,9 @@ public class AllLongestStrings {
                 maxlength = s.length();
             }
         }
+
+    //    String resarr[] = Arrays.stream(str).filter(s->s.length()==maxlength).toArray(String[] :: new);
+
        String outputarr[] = Arrays.stream(str).filter(s->s.length() == maxlength).toArray(String[] :: new);
         return outputarr;
     }

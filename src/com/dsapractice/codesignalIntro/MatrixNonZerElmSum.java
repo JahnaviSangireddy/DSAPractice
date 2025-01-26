@@ -37,10 +37,12 @@ public class MatrixNonZerElmSum {
         int totalsum =0;
         for(int i=0; i<matrix.length; i++){
             for(int j=0; j<matrix[i].length;j++){
-                totalsum+=matrix[i][j];
+              // totalsum+=matrix[i][j];
                 if(i!=0 && matrix[i-1][j] == 0){
-                    totalsum= totalsum - matrix[i][j];
+                 //   totalsum= totalsum - matrix[i][j];
+                    continue;
                 }
+                totalsum+=matrix[i][j];
             }
         }
         return totalsum;
